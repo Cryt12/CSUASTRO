@@ -1,0 +1,165 @@
+/* main.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    --color-bg: #4A4A4A;
+    --color-footer: #031B34;
+    --color-blog: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8A71;
+    --mainColor: #1C1C1C;
+    --mainColorLight: #6572a5;
+    --secondaryColor: red;
+    --textColor: #eee;
+}
+
+    body {
+        background-color: var(--mainColor);
+    }
+
+header img {
+    cursor: pointer;
+}
+
+.Logo {
+    margin-top: 15px;
+    height: 120px;
+    width: 160px;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+.navbar-container {
+    position: fixed;
+}
+header { 
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    z-index: 1000;
+    transition: top 0.3s;
+
+}
+
+nav a {
+    margin: 0 2rem;
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 14px;
+    font-weight: 800;
+    position: relative;
+    transition: color 1s ease, transform 0.2s ease;
+}
+
+nav a:before,
+nav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--textColor);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:before {
+    top: -5px;
+    transform-origin: right top;
+}
+
+nav a:after {
+    bottom: -5px;
+    left:0;
+    transform-origin: right bottom;
+}
+
+nav a:hover:before,
+nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav a.active,
+nav a:hover {
+    color: #B59410;
+}
+
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 14px;
+    right: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Logo {
+        margin-top: 80px;
+        height: 120px;
+        width: 150px;
+        margin-left: 38%;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+        right: 2rem;
+        font-size: 25px;
+        margin-right: 3%;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-300vw);
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+
+    header .responsive_nav {
+        transform: none;
+        right: 0;
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        font-size: 28px;
+        margin-right: 0;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}

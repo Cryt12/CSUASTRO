@@ -1,0 +1,55 @@
+.learn-more-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .center-logo {
+    display: block;
+    margin: 0 auto;
+    height: 15vh;
+    width: auto;
+  }
+  
+  .back-button {
+    padding: 30px 20px;
+    background-color: transparent;
+    border: none; 
+    color: rgb(228, 69, 228); 
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+  }  
+  
+  .content {
+    text-align: center;
+  }
+  
+  .solar-storm-image {
+    height: 40vh;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .headline {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: aliceblue;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    color: aliceblue;
+  }
+  

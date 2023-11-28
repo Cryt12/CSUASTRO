@@ -1,0 +1,38 @@
+footer {
+  background-color: rgba(28, 28, 28, 0.3); 
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 70%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.contact-privacy {
+  display: flex;
+  align-items: center;
+}
+
+.contacts a,
+.privacy-policy a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}

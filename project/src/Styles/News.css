@@ -1,0 +1,155 @@
+/* science.css */
+
+.news_body{
+    display: flex;
+    flex-direction: column;
+}
+
+.solar_storm_photo{
+    position: absolute;
+    height: 120vh;
+    width: 100%;
+    background-image: url('../img/News/solar_storm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.fullscreen-image-section1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+}
+
+.learn-more-content1 {
+    margin-top: 30%;
+    color: white;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.learn-more-content2 {
+    margin-top: 40%;
+    color: white;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.learn-more-content3 {
+    margin-top: 50%;
+    color: white;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.learn-more-content1 .solar {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-bottom: 3px;
+}
+
+.learn-more-content2 .blackhole {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-bottom: 3px;
+}
+
+.learn-more-content3 .earth {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-bottom: 3px;
+}
+
+.learn-more-button {
+    position: relative;
+    width: 15%;
+    background-color: transparent;
+    color: white;
+    padding: 12px;
+    font-size: 60%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.learn-more-button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;   
+    width: 0;
+    height: 0;
+    background: white;
+    border-radius: 30%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease-out, height 0.4s ease-out;
+    z-index: -1;
+}
+
+.learn-more-button:hover {
+    color: black; 
+    font-weight: bolder;
+}
+.learn-more-button:hover:before {
+    width: 100%;
+    height: 200%;
+    z-index: -1;
+}   
+
+.astrophysics-photo {
+    position: absolute;
+    top: 15vh;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/News/blackhole.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.exoplanet-photo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    top: 25vh;
+    background-image: url('../img/News/kepler.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.solar_storm_photo,
+.astrophysics-photo,
+.exoplanet-photo{
+    animation: moveBackground 40s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
