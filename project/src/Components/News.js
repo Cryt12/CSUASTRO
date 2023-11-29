@@ -20,8 +20,8 @@ const News = () => {
             <p>SPACE WEATHER</p>
             <p className='solar'>SOLAR STORM</p>
             {}
-            <Link to="/learnmore/solarstorm" className="learn-more-button1">
-                 <h2>LEARN MORE</h2>
+            <Link to="/learnmore/solarstorm" className="learn-more-button">
+                 <h4>LEARN MORE</h4>
             </Link>
           </div>
           <div className='solar_storm_photo'></div>
@@ -34,7 +34,7 @@ const News = () => {
                      <p className='blackhole'>BLACKHOLE</p>
                  {}
                  <Link to="/learnmore/blackhole" className="learn-more-button">
-                    <h2>LEARN MORE</h2>
+                    <h4>LEARN MORE</h4>
                 </Link>
             </div>
             <div className="astrophysics-photo"></div>
@@ -42,15 +42,15 @@ const News = () => {
 
             {/* Third Page */}
             <div className="fullscreen-image-section1">
-                <div className="learn-more-content3">
-                    <p>EXOPLANETS</p>
-                    <p className='earth'>KEPLER-452b</p>
-                    <button className="learn-more-button">
-                        <h2>LEARN MORE</h2>
-                    </button>
-                </div>
-                <div className="exoplanet-photo"></div>
-            </div>
+    <div className="learn-more-content3">
+        <p>EXOPLANETS</p>
+        <p className='earth'>KEPLER-452b</p>
+        <Link to="/learnmore/kepler452b" className="learn-more-button">
+            <h4>LEARN MORE</h4>
+        </Link>
+    </div>
+    <div className="exoplanet-photo"></div>
+</div>
             </div>
     );
 };
